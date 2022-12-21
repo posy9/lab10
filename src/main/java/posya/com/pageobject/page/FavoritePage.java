@@ -20,11 +20,11 @@ public class FavoritePage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "[class*='ProductLink']")
+    @FindBy(css = "[class*='ProductTitle-module']")
     WebElement clothName;
 
     public String findClothName(){
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[class*='ProductLink']")));
+      // wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[class*='ProductLink']")));
         return clothName.getAccessibleName();
     }
 }

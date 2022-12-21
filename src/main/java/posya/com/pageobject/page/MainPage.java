@@ -32,7 +32,7 @@ public class MainPage {
     List<WebElement> shirtPriceList;
 
     public MainPage acceptAllCookies() {
-        wait.until(ExpectedConditions.elementToBeClickable(cookieBanner));
+       // wait.until(ExpectedConditions.elementToBeClickable(cookieBanner));
         cookieBanner.click();
         return this;
     }
